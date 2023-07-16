@@ -37,7 +37,7 @@ main {
   margin: 0 auto;
   text-align: center;
   overflow: hidden;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 table {
@@ -69,7 +69,7 @@ td.prac div {
 td.prac div div {
   width: 100%;
   height: 100%;
-  padding: 0.5em;
+  padding: 0.4em;
 }
 
 td.prac div div:not(:last-child) {

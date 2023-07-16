@@ -34,9 +34,7 @@ main {
 }
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  margin: auto;
   text-align: center;
 }
 
@@ -85,16 +83,34 @@ td.prac div div:not(:last-child) {
 }
 
 .teachers-container {
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
   justify-content: space-between;
   align-items: start;
   text-align: left;
-  margin: 1em 0;
+  height: 100%;
+}
+
+.teachers-container > div {
+  height: inherit;
+  padding: 1rem;
+  border-left: 1px solid #eaeaea;
+  border-collapse: collapse;
+}
+
+.teachers-container > div:last-child {
+  border-right: 1px solid #eaeaea;
 }
 
 .teachers-container div div:first-child {
   width: 100%;
   margin-bottom: 1rem;
+  color: burlywood;
+}
+
+
+.teachers-container div div {
+  margin: 0.5rem 0;
 }
 
 .today {

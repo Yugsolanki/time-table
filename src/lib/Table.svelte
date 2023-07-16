@@ -15,6 +15,51 @@
             let data = td.textContent.split('/');
             td.innerHTML = `${data[0]}<br>${data[1]}<br>/${data[2]}`;
         })
+
+        let date = new Date();
+        let day = date.getDay();
+        let node = document.querySelectorAll('col');
+        console.log(node[2]);
+        if (day === 1) {
+            node[2].classList.add('today');
+        } else if (day === 2) {
+            node[3].classList.add('today');
+        } else if (day === 3) {
+            node[4].classList.add('today');
+        } else if (day === 4) {
+            node[5].classList.add('today');
+        } else if (day === 5) {
+            node[6].classList.add('today');
+        }
+
+    //     let hour = date.getHours();
+    //     let min = date.getMinutes();
+    //     console.log(hour, min);
+    //     if ((hour === 9 && min >= 15) ||(hour === 10 && min <= 15)) {
+    //         let no = document.querySelectorAll(`tr:nth-child(1) td:nth-child(${day+2})`);
+    //         no[0].classList.add('current');
+    //     } else if ((hour === 10 && min >= 15) ||(hour === 11 && min <= 15)) {
+    //         let no = document.querySelectorAll(`tr:nth-child(2) td:nth-child(${day+2})`);
+    //         no[0].classList.add('current');
+    //     } else if ((hour === 11 && min >= 15) ||(hour === 12 && min <= 15)) {
+    //         let no = document.querySelectorAll(`tr:nth-child(3) td:nth-child(${day+2})`);
+    //         no[0].classList.add('current');
+    //     } else if ((hour === 12 && min >= 15) ||(hour === 13 && min <= 0)) {
+    //         let no = document.querySelectorAll(`tr:nth-child(4) td:nth-child(${day+2})`);
+    //         no[0].classList.add('current');
+    //     } else if ((hour === 13 && min >= 0) ||(hour === 14 && min <= 0)) {
+    //         let no = document.querySelectorAll(`tr:nth-child(5) td:nth-child(${day+2})`);
+    //         no[0].classList.add('current');
+    //     } else if ((hour === 14 && min >= 0) ||(hour === 15 && min <= 0)) {
+    //         let no = document.querySelectorAll(`tr:nth-child(6) td:nth-child(${day+2})`);
+    //         no[0].classList.add('current');
+    //     } else if ((hour === 15 && min >= 0) ||(hour === 16 && min <= 0)) {
+    //         let no = document.querySelectorAll(`tr:nth-child(7) td:nth-child(${day+2})`);
+    //         no[0].classList.add('current');
+    //     } else if ((hour === 16 && min >= 0) ||(hour === 17 && min <= 0)) {
+    //         let no = document.querySelectorAll(`tr:nth-child(8) td:nth-child(${day+2})`);
+    //         no[0].classList.add('current');
+    //     }
     })
 
     const header = ['Period No.', 'Time', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
@@ -157,6 +202,22 @@
 </script>
 
 <table>
+    <colgroup>
+        <!-- <col span="1" style="">
+        <col span="1" style="background-color: red">
+        <col span="1" style="background-color: green">
+        <col span="1" style="background-color: blue">
+        <col span="1" style="background-color: purple">
+        <col span="1" style="background-color: orange">
+        <col span="1" style="background-color: indigo"> -->
+        <col span="1">
+        <col span="1">
+        <col span="1">
+        <col span="1">
+        <col span="1">
+        <col span="1">
+        <col span="1">
+    </colgroup>
     <thead>
         <tr>
             {#each header as column}

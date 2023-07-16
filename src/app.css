@@ -55,6 +55,10 @@ td.prac {
   padding: 0rem !important;
 }
 
+td, th {
+  font-weight: 600;
+}
+
 td.prac div {
   height: 100%;
   display: flex;
@@ -91,4 +95,12 @@ td.prac div div:not(:last-child) {
 .teachers-container div div:first-child {
   width: 100%;
   margin-bottom: 1rem;
+}
+
+.today {
+  background-color: purple;
+}
+
+.current {
+  background-color: brown;
 }

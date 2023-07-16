@@ -34,10 +34,10 @@ main {
 }
 
 #app {
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
   overflow: hidden;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 table {

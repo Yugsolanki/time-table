@@ -36,6 +36,8 @@ main {
 #app {
   margin: auto;
   text-align: center;
+  overflow: hidden;
+  padding: 1rem;
 }
 
 table {
